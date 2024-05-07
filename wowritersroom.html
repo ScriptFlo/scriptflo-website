@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <meta name="description" content="Contact Page">
+    <title>WO Writers Room</title>
+
+    <!------- Fonts Here ------->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!------- Css Here ------->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!------- Responsive Css Here ------->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!------- Font Awesome Css Here ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!------- Sendinblue Form Css Here ------->
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W6ZJX7V');</script>
+      <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6ZJX7V"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- 
+      =====================================================
+      Start Header Section 
+      =====================================================
+    -->
+
+    <!--==========Menu Bar Section Start==========-->
+    <nav class="navbar" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-btn">
+                <div id="menu-bar">
+                    <div id="icon" onclick="onClickMenu()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+
+                    <ul class="menu" id="menu">
+                        <li class="dropdown">
+                            <a class="dropbtn">Features 
+                              <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="marketplace.html">Marketplace</a>
+                                <a href="wowritersroom.html">WO Writers Room</a>
+                                <a href="producer.html">Producer</a>
+                                <a href="screenwriter.html">Screenwriter</a>
+                                <a href="courses-details.html">WO Foundations <span></span></a>
+                            </div>
+                        </li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="https://www.linkedin.com/pulse/10-tips-overcoming-writers-block-strategies-techniques-screenwriters-/?trackingId=WehHPgiXr189xGJt%2BHw5PA%3D%3D">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://app.woaccelerator.com/login" id="preApp" onClick="woaSignUp()" class="btn btn-primary">Login</a></li>
+                        <li><a href="https://app.woaccelerator.com/login" id="preApp" onClick="woaSignUp()" style="color: #2B79BD;">SIGN UP</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bg" id="menu-bg"></div>
+            </div>
+        </div>
+    </nav>
+    <!--Pre Launch Send In Blue Form Start-->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <iframe id="prelaunch" width="540" height="100%" frameborder="0" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+        </div>
+    </div>
+    </div>
+    <!--Pre Launch Send In Blue Form End-->
+
+    <!--==========Menu Bar Section End==========-->
+
+    <!-- 
+      =====================================================
+      End Header Section 
+      =====================================================
+    -->
+
+    <!-- 
+      =====================================================
+      Start WoWritersRoom Hero Section 
+      =====================================================
+    -->
+    <section class="wowritersroom-hero">
+        <div class="container">
+            <h2>Smash the Status Quo</h2>
+            <p>Quit pitching and praying. Pair up with some of the best screenwriters in the business to fine tune your ideas, learn the ins and outs of successfully pitching producers, and gain confidence in yourself, your script, and your future.</p>
+            <div class="scroll">
+                <i class="fa fa-angle-down one"></i>
+                <i class="fa fa-angle-down two"></i>
+                <i class="fa fa-angle-down three"></i>
+                <p>Scroll Down</p>
+            </div>
+        </div>
+    </section>
+    <!-- 
+      =====================================================
+      End WoWritersRoom Hero Section 
+      =====================================================
+    -->
+
+    <!-- 
+      =====================================================
+      Start Why WoWritersRoom Section 
+      =====================================================
+    -->
+    <section class="why-wowritersroom">
+        <div class="container">
+            <h3>Why WoWritersRoom</h3>
+            <div class="inner-why">
+                <div class="card">
+                    <img src="assets/images/writersroom1.png" alt="icon">
+                    <img src="assets/images/writersroom1hover.png" alt="icon" class="hover-img">
+                    <h5>You’re Stuck</h5>
+                    <p>If you are having a hard time writing a script with an original concept and compelling story. WoWriters Room is fashioned to turn your story around.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/writersroom2.png" alt="icon">
+                    <img src="assets/images/writersroom2hover.png" alt="icon" class="hover-img">
+                    <h5>Non-Sellable Script</h5>
+                    <p>Packed with intensive core and deluxe courses designed to sharpen your skills for the most current film and television marketplace today!</p>
+                </div>
+            </div>
+            <div class="inner-why">
+                <div class="card">
+                    <img src="assets/images/writersroom1.png" alt="icon">
+                    <img src="assets/images/writersroom1hover.png" alt="icon" class="hover-img">
+                    <h5>Trying To Break Into The Industry</h5>
+                    <p>Leverage a network of writers who are at the top of their game in their screenwriting craft for an exclusive 6 months of intensive training and collaboration.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/writersroom2.png" alt="icon">
+                    <img src="assets/images/writersroom2hover.png" alt="icon" class="hover-img">
+                    <h5>Hard To Sell Your Script</h5>
+                    <p>Are you having a tough time selling your scripts? WoWriters Room gives you the opportunity to put your screenplays in front of world-class producers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+      =====================================================
+      End Why WoWritersRoom Section 
+      =====================================================
+    -->
+
+    <!-- 
+      =====================================================
+      Start WritersRoom Grow Section 
+      =====================================================
+    -->
+    <section class="writersroom-grow">
+        <div class="container">
+            <div class="inner-grow">
+                <div class="grow-text">
+                    <h3>Grow with WoWriters Room</h3>
+                    <p>Join our exclusive program designed for writers around the world who are at the top of their game in their screenwriting craft. WoWriters have the ability to sell in our marketplace and have access to a year-long course schedule, as
+                        well as peers- invite only.</p>
+                </div>
+                <div class="grow-img">
+                    <img src="assets/images/grow-img.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+      =====================================================
+      End WritersRoom Grow Section 
+      =====================================================
+    -->
+
+    <!-- 
+      =====================================================
+      Start WritersRoom Benefits Section 
+      =====================================================
+    -->
+    <section class="writersroom-benefits">
+        <div class="container">
+            <div class="inner-benefits">
+                <div class="benefits-img">
+                    <img src="assets/images/benefits-img.png" alt="image">
+                </div>
+                <div class="benefits-text">
+                    <p><span>Benefits?</span></p>
+                    <h3>WoWriters Room Benefits at a Glance</h3>
+                    <p>Our Room offers you the necessary resources and tools to hone your skills for both film and television.</p>
+
+                    <div class="inner-accordion">
+                        <div class="block">
+                            <input type="checkbox" id="title1" />
+                            <label for="title1"><span class="blue"></span>One-on-One Sessions</label>
+                            <div class="content">
+                                <p>Have one-on-one support and the opportunity to write scripts from new ideas and develop creative confidence.</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <input type="checkbox" id="title2" />
+                            <label for="title2"><span class="green"></span>Intensive/Deluxe Courses</label>
+                            <div class="content">
+                                <p>Learn how to creatively write original scripts and become proficient in writing great Film and TV dialogues.</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <input type="checkbox" id="title3" />
+                            <label for="title3"><span class="yellow"></span>Free marketplace Access</label>
+
+                            <div class="content">
+                                <p>Have free access to our marketplace and put your best work right in front of producers from around the world.</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <input type="checkbox" id="title4" />
+                            <label for="title4"><span class="pink"></span>Live Sessions with Producers</label>
+
+                            <div class="content">
+                                <p>Have real-time screenwriting sessions from talented and diverse producers and learn to write great storylines worth buying.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+      =====================================================
+      End WritersRoom Benefits Section 
+      =====================================================
+    -->
+
+    <!-- 
+      =====================================================
+      Start Start WritersRoom Section 
+      =====================================================
+    -->
+    <section class="start-writersroom">
+        <div class="container">
+            <div class="inner-start">
+                <div class="start-img">
+                    <img src="assets/images/start-img.png" alt="image">
+                </div>
+                <div class="start-text">
+                    <p class="title"><span>WHAT ARE YOU WAITING FOR?</span></p>
+                    <p>Getting started is as easy as completing the application, hopping on a video interview, and putting your best foot forward.</p>
+                    <a href="#" class="btn btn-white">Coming Soon</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+      =====================================================
+      End Start WritersRoom Section 
+      =====================================================
+    -->
+
+    <!-- 
+      =====================================================
+      Start WritersRoom Accordion Section 
+      =====================================================
+    -->
+    <section class="contact-accordion">
+        <div class="container">
+            <h3>Frequently Asked Questions<img src="assets/images/blue-under-img.png" alt=""></h3>
+            <div class="inner-accordion">
+                <div class="block">
+                    <input type="checkbox" id="title5" />
+                    <label for="title5">How do I Join WoWriters Room?</label>
+                    <div class="content">
+                        <p>Screenwriters may apply by submitting a script and application on our website.</p>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <input type="checkbox" id="title6" />
+                    <label for="title6">Can anyone apply?</label>
+                    <div class="content">
+                        <p>Yes, anyone can apply, but space is limited and each application and writing sample will be thoroughly evaluated based on the current market and overall writing skill.</p>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <input type="checkbox" id="title7" />
+                    <label for="title7">How do I know if my application is successful?</label>
+
+                    <div class="content">
+                        <p>We will send you an email once your application is successful.</p>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <input type="checkbox" id="title8" />
+                    <label for="title8">Can other screenwriters I know join the Room?</label>
+
+                    <div class="content">
+                        <p>Yes, you can invite your other peers using your peer-invite only. They will have to complete the application process, and if successful, they can join the WoWriters Room.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+      =====================================================
+      End WritersRoom Accordion Section 
+      =====================================================
+    -->
+
+    <!-- 
+        =====================================================
+        Start Footer Section 
+        =====================================================
+    -->
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-image"><img src="assets/images/logo2.png" alt=""></div>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-links-content footer-links-content-left">
+                        <div class="footer-title">Links</div>
+                        <div class="footer-link-items">
+                            <a href="marketplace.html" class="link-item">WO Market</a>
+                            <a href="wowritersroom.html" class="link-item">WO Writers Room</a>
+                            <a href="courses-details.html" class="link-item">WO Foundations</a>
+                            <a href="screenwriter.html" class="link-item">Screenwriter</a>
+                            <a href="producer.html" class="link-item">Producer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-content">
+                        <div class="footer-title">Company</div>
+                        <div class="footer-link-items">
+                            <a href="about.html" class="link-item">About page</a>
+                            <a href="careers.html" class="link-item">Careers</a>
+                            <a href="contact.html" class="link-item">Contact</a>
+                            <a href="https://www.linkedin.com/pulse/10-tips-overcoming-writers-block-strategies-techniques-screenwriters-/?trackingId=WehHPgiXr189xGJt%2BHw5PA%3D%3D" class="link-item">Blog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <div class="footer-social-content">
+                        <div class="footer-social-links">
+                            <p class="footer-title">Follow Us</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/@woaccelerator"><i class="fa fa-youtube-play"></i></a>
+                            <a href="https://www.linkedin.com/company/woaccelerator/"><i class="fa fa-linkedin-square"></i></a>
+                            <a href="https://www.instagram.com/_woaccelerator_/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://facebook.com/woaccelerator"><i class="fa fa-facebook-official"></i></a>
+                        </div>
+                        <div class="footer-newsletter">
+
+                            <!-- Sandinblue Form Html code Start  -->
+                            <div class="sib-form" style="text-align: left; padding: 0;">
+                                <div id="sib-form-container" class="sib-form-container">
+                                    <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#ffffff; max-width:450px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                            <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                                        </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#ffffff; border-radius:3px; border-color:#13ce66;max-width:450px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                            <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                                        </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription has been successful.</span>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:left;  background-color:transparent; max-width:450px; padding: 0;">
+                                        <form id="sib-form" method="POST" action="https://3b334ad7.sibforms.com/serve/MUIEAHxpkToYvJRtYq6B5GGkbrEOYAWpzzPIv9vL4RrQGeEdRXhmK7yOSQ39tes7kidPre2t_2xkywPczU6yD189Znk2VAxd5C7hfylawfPbOojYaBxEl03hKLvtwUcLoxheOkMX3XcbJLNhrHcw5dkTYArFcdaPQ9RzVoAGGFBUnZUTKpHxs_N_KoYeXM66J0fMfLTklSewMEJB"
+                                            data-type="subscription">
+                                            <div style="padding: 0;">
+                                                <div class="sib-input sib-form-block" style="padding: 0;">
+                                                    <div class="form__entry entry_block">
+                                                        <div class="form__label-row ">
+                                                            <label class="entry__label" style="font-size:16px; text-align:left; font-weight:600; color:#ffffff;" for="EMAIL" data-required="*">
+                                                            Stay tuned for updates
+                                                        </label>
+
+                                                            <div class="entry__field" style="background-color: #4D5B69 !important; border: #4D5B69 !important; max-width: 100%;padding: 3px">
+                                                                <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Type your email" data-required="true" required style="color: #ffffff;" />
+                                                            </div>
+                                                        </div>
+
+                                                        <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; color:#ffffff; border-radius:3px; border-color:#ff4949;">
+                                                    </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="padding: 48px 8px;">
+                                                <div class="sib-form-block" style="text-align: left; padding: 0;">
+                                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:600; color:#FFFFFF; background: #2B79BD; border-radius:3px; border-width:0; padding: 10px 20px;" form="sib-form" type="submit">
+                                                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                                                        <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                    </svg>
+                                                    Subscribe
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="email_address_check" value="" class="input--hidden">
+                                            <input type="hidden" name="locale" value="en">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sandinblue Form Html code Start  -->
+
+                            <input type="checkbox" id="accept" name="accept" value="accept" class="accept">
+                            <label for="accept">Accept to receive emails from us.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>
+                    &copy; 2022, WoAccelerator
+                </p>
+                <div class="policy">
+                    <a href="privacy.html" target="_blank"> Privacy Policy</a>
+                    <a href="terms.html" target="_blank">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 
+    =====================================================
+    End Footer Section 
+    =====================================================
+    -->
+
+    <!-- 
+    =====================================================
+    Start Additional Scripts Loaded Last 
+    =====================================================
+    -->
+    <!--Send In Blue-->
+    <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
+    <!--Jquery 3.3.1-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <!--All JS Assets-->
+    <script src="assets/js/main.js"></script>
+    <!--Temporary JS Code - Remove Once App is Ready -->
+    <script>let woaSignUp = () => {var iframe = document.getElementById('prelaunch').src = src = "https://3b334ad7.sibforms.com/serve/MUIEAI18U4UYzn2x_OfK3yKe4CPETUGts_Ym1fw3vesptGHsUg6LPZ-YIVup6eoSnOEScOGpE1d713kiwtydmmhP2kgyaV-kx-mgMySAtbQTb9jFg1dYQpkOdPJCsbBt5pu3bt4VuGNskYqtJ9LcOz6HDJTXXHhQGS3pQn8b5DgJtk-JoRZ-JWsscHjr4pkb6_Flj7H6XjWxc7lf";}</script>
+    <!--All Ajax Libraries-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- 
+    =====================================================
+    End Additional Scripts Loaded Last 
+    =====================================================
+    -->
+</body>
+
+</html>

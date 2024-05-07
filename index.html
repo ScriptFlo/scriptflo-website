@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <meta name="description" content="Contact Page">
+    <title>Home</title>
+
+    <!------- Fonts Here ------->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!------- Css Here ------->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!------- Responsive Css Here ------->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!------- Font Awesome Css Here ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!------- Sendinblue Form Css Here ------->
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css" />
+    <!------- Slick Slider Form Css Here ------->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W6ZJX7V');</script>
+      <!-- End Google Tag Manager -->
+
+    <!-- ManyChat -->
+    <script src="//widget.manychat.com/111296231362545.js" defer="defer"></script>
+    <script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
+    <!-- End ManyChat -->
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6ZJX7V" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- 
+      =====================================================
+      Start Header Section 
+      =====================================================
+    -->
+
+    <!--==========Menu Bar Section Start==========-->
+    <nav class="navbar" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">
+                    <img src="assets/images/logos.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-btn">
+                <div id="menu-bar">
+                    <div id="icon" onclick="onClickMenu()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+
+                    <ul class="menu" id="menu">
+                        <li class="dropdown">
+                            <a class="dropbtn">Features
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="marketplace.html">Marketplace</a>
+                                <a href="wowritersroom.html">WO Writers Room</a>
+                                <a href="producer.html">Producer</a>
+                                <a href="screenwriter.html">Screenwriter</a>
+                                <a href="courses-details.html">WO Foundations <span></span></a>
+                            </div>
+                        </li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="https://www.linkedin.com/pulse/10-tips-overcoming-writers-block-strategies-techniques-screenwriters-/?trackingId=WehHPgiXr189xGJt%2BHw5PA%3D%3D">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#" id="preApp" onClick="woaSignUp()" class="btn btn-primary">Join waitlist</a></li>
+                        <!-- <li><a href="https://app.woaccelerator.com/login" id="preApp" onClick="woaSignUp()" style="color: #2697FF;" class="sign-up">SIGN UP</a></li> -->
+                    </ul>
+                </div>
+                <div class="menu-bg" id="menu-bg"></div>
+            </div>
+        </div>
+    </nav>
+    <!--Pre Launch Send In Blue Form Start-->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <iframe id="prelaunch" width="540" height="100%" frameborder="0" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+        </div>
+    </div>
+        <div id="popup5" class="popup5">
+            <span class="close-icon" onclick="closePopup()">X</></span>
+            <form id="waitlistForm" action="https://formspree.io/f/xpzvbdzp" method="POST">
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" placeholder="Joe"><br>
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="djmakeup@gmail.com"><br><br>
+                <label for="type">Type:</label><br>
+                <input type="text" id="role" name="role" placeholder="Scriptwriter/Producer/Beats maker"><br><br>
+                <button type="submit">Submit</button>
+                <div id="loadingMessage" class="loading">Submitting...</div>
+            </form>
+        </div>
+    </div>
+    <!--Pre Launch Send In Blue Form End-->
+
+    <!--==========Menu Bar Section End==========-->
+
+    <!-- 
+      =====================================================
+      End Header Section 
+      =====================================================
+    -->
+
+    <!-- 
+        =====================================================
+        Start Home Hero Section 
+        =====================================================
+    -->
+    <section class="home-hero">
+        <div class="container">
+            <div class="inner-home-hero">
+                <div class="text">
+                    <h2>Be the voice of the <br><span>Entertainment Industry</span></h2>
+                    <p>Learn, write, sell. Find production ready scripts, songs and beats from A-class writers and beat makers.</p>
+                    <a href="#" id="preApp" onClick="woaSignUp()" class="main-hero-btn">Get Started</a>
+                    <img src="assets/images/scroll-down.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="assets/images/home-hero-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        =====================================================
+        End Home Hero Section 
+        =====================================================
+    -->
+
+    <!-- 
+        =====================================================
+        Start Buy Sell Production Section 
+        =====================================================
+    -->
+    <section class="buy-sell-production">
+        <div class="container">
+            <h3>Sell/Buy production-ready scripts, songs and beats</h3>
+            <p>Where scriptwriters and song writers can submit their scripts, beat makers can submit their beats and producers can option or purchase scripts.</p>
+            <div class="inner-buy-sell-production">
+                <div class="card" style="border-left: 4px solid #2B79BD">
+                    <div class="inner-card">
+                        <div class="img">
+                            <img src="assets/images/buy-sell-production-img.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>Scriptwriter/Beat makers/Songwriters</h5>
+                            <p>Put your best work in front of producers to review, option, or purchase.</p>
+                        </div>
+                    </div>
+                    <div class="inner-card-1">
+                        <ul>
+                            <li>Upload</li>
+                            <li>Await Review</li>
+                            <li>Publish</li>
+                            <li>Get Paid</li>
+                        </ul>
+                        <a href="screenwriter.html" class="buy-sell-production-btn" style="color: #2B79BD">See more <i
+                                class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #F38F39">
+                    <div class="inner-card">
+                        <div class="img">
+                            <img src="assets/images/buy-sell-production-img2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>Producer</h5>
+                            <p>Option or purchase hand-picked scripts in any genre of your choice from our rich catalog of scripts.</p>
+                        </div>
+                    </div>
+                    <div class="inner-card-1">
+                        <ul>
+                            <li>Apply</li>
+                            <li>Choose a Subscription Plan</li>
+                            <li>Browse marketplace</li>
+                            <li>Purchase type</li>
+                        </ul>
+                        <a href="producer.html" class="buy-sell-production-btn" style="color: #F38F39">See more <i
+                                class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        =====================================================
+        End Buy sell Production Section 
+        =====================================================
+    -->
+
+    <!-- 
+        =====================================================
+        Start Home How Get Section 
+        =====================================================
+    -->
+    <section class="home-how-get">
+        <div class="container">
+            <h3>How to get in</h3>
+            <div class="slide">
+                <div class="screenwriter slide-links active" onclick="homeSlide(event, 'screenwriter')">
+                    <div class="img">
+                        <img class="not-hover" src="assets/images/slide1.png" alt="">
+                        <img class="hover-img" src="assets/images/home-SW-white.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h5>Writer</h5>
+                        <p>Learn, Write, Sell</p>
+                    </div>
+                </div>
+                <div class="producer slide-links" onclick="homeSlide(event, 'producer')">
+                    <div class="img">
+                        <img class="not-hover" src="assets/images/slide2.png" alt="">
+                        <img class="hover-img" src="assets/images/home-producer-white.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h5>Producer</h5>
+                        <p>Browse, Buy, Produce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dots-div">
+                <div class="custom-dots" id="custom-dot-screenwriter" style="background: #2B79BD;"></div>
+                <div class="custom-dots" id="custom-dot-producer" style="background: #E2E2E2;"></div>
+            </div>
+            <div class="slide-content" id="screenwriter">
+                <p>As a writer or beat maker, you can access Script Flo's resources, files, lessons, and the marketplace by joining any of these packages.</p>
+                <div class="inner-slide-content desktop-section">
+                    <div class="card">
+                        <img src="assets/images/home-slide-img.png" alt="">
+                        <h6>Script Flo Foundations</h6>
+                        <p>Complete at least one Script Flo Foundations course, get a special invitation to submit your best script to our marketplace.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/home-slide-img2.png" alt="">
+                        <h6>Direct path</h6>
+                        <p>Get unlimited access to our marketplace once your submitted script has been approved and you've chosen a marketplace plan.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/home-slide-img3.png" alt="">
+                        <h6>Script Flo Writers Room</h6>
+                        <p>Be a member of our invite-only Room. Enjoy Free and Unlimited access to Script Flo Markets, lessons, resources, training, and events.</p>
+                    </div>
+                </div>
+                <!-- mobile-section -->
+                <div class="inner-slide-content mobile-section">
+                    <div class="one-time slider mb-3">
+                    <div class="card">
+                        <img src="assets/images/home-slide-img.png" alt="">
+                        <h6>Script Flo Foundations</h6>
+                        <p>Complete at least one Script Flo Foundations course, get a special invitation to submit your best script to our marketplace.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/home-slide-img2.png" alt="">
+                        <h6>Direct path</h6>
+                        <p>Get unlimited access to our marketplace once your submitted script has been approved and you've chosen a marketplace plan.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/home-slide-img3.png" alt="">
+                        <h6>Script Flo Writers Room</h6>
+                        <p>Be a member of our invite-only Room. Enjoy Free and Unlimited access to Script Flo Markets, lessons, resources, training, and events.</p>
+                    </div>
+                </div>
+                </div>
+                <a href="https://app.woaccelerator.com/login" id="preApp" onClick="woaSignUp()" class="h-h-g-start-btn">Get Started</a>
+                <!-- <a href="https://app.woaccelerator.com/login" id="preApp" onClick="woaSignUp()" class="h-h-g-start-btn">Get Started</a> -->
+
+            </div>
+            <div class="slide-content" id="producer" style="display: none;">
+                <p>As a producer, you can gain access to the marketplace whether you are sole producer or with a record label.</p>
+                <div class="inner-slide-content">
+                    <div class="card card-bg" style="background-color: #F38F39; border-radius: 8px;">
+                        <p class="head">EARLY PRODUCER ACCESS</p>
+                        <h3>Build Beta with us</h3>
+                        <p class="sp" id="sp">FREE while in Beta</p>
+                        <i class="fa fa-long-arrow-right"></i>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/home-slide-img4.png" alt="">
+                        <h6>Sole Producer</h6>
+                        <p>If you are a sole producer, you are eligible to apply to join our marketplace.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/home-slide-img5.png" alt="">
+                        <h6>Record Label or Association</h6>
+                        <p>If you own a record label or incharge of artist, actors and actress, and Investor, you are eligible to apply to join our marketplace.</p>
+                    </div>
+                </div>
+                <a href="#" id="preApp" onClick="woaSignUp()" class="btn btn-primary" style="background-color: #F38F39;">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        =====================================================
+        End Home How Get Section 
+        =====================================================
+    -->
+
+    <!-- 
+        =====================================================
+        Start Grow WO WritersRoom Section 
+        =====================================================
+    -->
+    <section class="grow-wowritersroom" style="background-color: #F6FBFF;">
+        <div class="container">
+            <div class="inner-grow-wowritersroom">
+                <div class="text">
+                    <h3>Grow with ScriptFlo Writers Room <span></span></h3>
+                    <p>Join our exclusive program designed for writers around the world who are at the top of their game in their screenwriting craft. ScriptFlo Writers have the ability to sell in our marketplace and have access to a year-long course schedule, as well as peers- invite only. </p>
+                    <div class="inner-text">
+                        <div class="card">
+                            <h6>Break Into The Industry</h6>
+                            <p>Learn how to write great scripts, connect with other writers at the top of their craft and become a part of a screenwriting, songwriting or beats community.</p>
+                        </div>
+                        <div class="card">
+                            <h6>Intensive training and collaboration</h6>
+                            <p>Gain access to ScriptFlo's resources and courses designed to sharpen your skills for the most current film, music and television marketplace today. </p>
+                        </div>
+                        <div class="card">
+                            <h6>Submit Your Writings</h6>
+                            <p>Put your scripts or writing in front of producers worldwide. Apply to ScriptFlo's Writers room and have the opportunity to submit your scripts and writing to producers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="assets/images/grow-wowritersroom-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        =====================================================
+        End Grow WO WritersRoom Section 
+        =====================================================
+    -->
+
+    <!-- 
+      =====================================================
+      Start WritersRoom Benefits Section 
+      =====================================================
+    -->
+    <section class="writersroom-benefits home-benefits" style="background-color: #F6FBFF;">
+        <div class="container">
+            <div class="inner-benefits">
+                <div class="benefits-img">
+                    <img src="assets/images/benefits-img.png" alt="image">
+                    <a href="wowritersroom.html" class="benefits-img-btn">visit ScriptFlo Writers room</a>
+                </div>
+                <div class="img-responsive">
+                    <img src="assets/images/grow-wowritersroom-img.png" alt="">
+                </div>
+                <div class="benefits-text">
+                    <p><span>Benefits?</span></p>
+                    <h3>SciptFlo Writers Room Benefits <span>at a Glance</span> </h3>
+                    <p>Our Room offers you the necessary resources and tools to hone your skills for both film, music and television.
+                    </p>
+
+                    <div class="inner-accordion">
+                        <div class="block">
+                            <input type="checkbox" id="title1" />
+                            <label for="title1"><span class="blue"></span>One-on-One Sessions</label>
+                            <div class="content">
+                                <p>Have one-on-one support and the opportunity to write scripts from new ideas and develop creative confidence.</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <input type="checkbox" id="title2" />
+                            <label for="title2"><span class="green"></span>Intensive/Deluxe Courses</label>
+                            <div class="content">
+                                <p>Learn how to creatively write original scripts and become proficient in writing great Film, Music and TV dialogues.</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <input type="checkbox" id="title3" />
+                            <label for="title3"><span class="yellow"></span>Free marketplace Access</label>
+
+                            <div class="content">
+                                <p>Have free access to our marketplace and put your best work right in front of producers from around the world.</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <input type="checkbox" id="title4" />
+                            <label for="title4"><span class="pink"></span>Live Sessions with Producers</label>
+
+                            <div class="content">
+                                <p>Have real-time writing sessions from talented and diverse producers and learn to write great storylines and song lyrics worth buying.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+      =====================================================
+      End WritersRoom Benefits Section 
+      =====================================================
+    -->
+
+    <!-- 
+      =====================================================
+      Start WoFoundation Section 
+      =====================================================
+    -->
+    <section class="about-wofoundation">
+        <div class="container">
+            <div class="inner-about-wofoundation">
+                <div class="text">
+                    <h6>Not ready for the ScriptFlo Writers Room yet ?</h6>
+                    <h3>How about ScriptFlo Foundations? <span></span></h3>
+                    <p>Learn how to write original songs, plots that unfold naturally and great dialogue- that drives your plots and songs forward. Take a ScriptFlo Foundations course and grow your writing career to the next level. Enjoy the opportunity to sell your screenplays, songs in our marketplace while improving your writing skills and craft with our courses.</p>
+                </div>
+                <div class="img">
+                    <img src="assets/images/about-wofoundation-img.png" alt="" class="wofoundation-desktop-img">
+                    <img src="assets/images/about-wofoundation-mobile-img.png" alt="" class="wofoundation-mobile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+      =====================================================
+      End WoFoundation Section 
+      =====================================================
+    -->
+
+    <!-- 
+      =====================================================
+      Start Course Packages Section 
+      =====================================================
+    -->
+    <section class="course-packages">
+        <div class="container">
+            <h3>Course Packages</h3>
+            <div class="inner-course-packages">
+                <div class="card image-card">
+                    <p>Choose from any of our packages.</p>
+                    <img src="assets/images/home-choose-arrow.png" alt="">
+                </div>
+                <div class="card card-bg">
+                    <h6 style="color: #2B79BD;">Intensive courses</h6>
+                    <p class="home-course-learn">In these courses you will learn:</p>
+                    <ul>
+                        <li>The principles of screenwriting or songwriting.</li>
+                        <li>How to create memorable characters.</li>
+                        <li>How to create stuning lyrics.</li>
+                        <li>Narrative structure and storytelling.</li>
+                        <li>How to write marketable scripts and songs. </li>
+                    </ul>
+                </div>
+                <div class="card card-bg">
+                    <h6 style="color: #F2762A;">Deluxe courses</h6>
+                    <p class="home-course-learn">In these courses you will:</p>
+                    <ul>
+                        <li>Learn the playbook for writing and creating hit TV, Music and films.</li>
+                        <li>Discover the process of finding and creating original script/music ideas.</li>
+                        <li>Receive one-on-one coaching sessions with an instructor.</li>
+                        <li>Get access to our exclusive Producers' marketplace.</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="courses-details.html" class="btn home-btn-green">
+                Take a course <i class="fa fa-long-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+    <!-- 
+      =====================================================
+      End Course Packages Section 
+      =====================================================
+    -->
+
+    <!-- 
+      =====================================================
+      Start Home Accordion Section 
+      =====================================================
+    -->
+    <section class="home-accordion">
+        <div class="container">
+            <h3>FAQ.</h3>
+            <div class="inner-home-accordion">
+                <div class="writers-ask">
+                    <h5>Writers Ask:</h5>
+                    <div class="inner-accordion">
+
+                        <div class="block">
+                            <input type="checkbox" id="title11" />
+                            <label for="title11">What is the Writers’ Room?</label>
+                            <div class="content">
+                                <p>ScriptFlo Writers Room is a six month program designed to boost screenwriters’ and songwriters' careers through intensive classes break out sessions, and continuous support. By the end of the program, you’ll have the opportunity to submit production-ready scripts to our marketplace exclusively for producers around the world.</p>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <input type="checkbox" id="title12" />
+                            <label for="title12">What are the incentives for joining ScriptFlo Foundations?</label>
+                            <div class="content">
+                                <p>ScriptFlo Foundation courses are a four-week program focused on refining certain writing skills for a fee. At the end of the course, depending on your performance, you are invited to submit one finished script to our marketplace, offering
+                                    you a rare opportunity to have your work seen by producers around the world and, ultimately, to be optioned or purchased.</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <input type="checkbox" id="title13" />
+                            <label for="title13">Can anyone join ScriptFlo Writers Room?</label>
+                            <div class="content">
+                                <p>Yes, anyone can apply to join the Room, but space is limited. Each application and writing sample will be thoroughly evaluated based on the current market and overall writing skill.</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <input type="checkbox" id="title14" />
+                            <label for="title14">Can anyone take the ScriptFlo Foundations courses?</label>
+
+                            <div class="content">
+                                <p>Yes, anyone can enroll in the courses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producers-ask">
+                    <h5>Producers Ask:</h5>
+                    <div class="inner-accordion">
+                        <div class="block">
+                            <input type="checkbox" id="title15" />
+                            <label for="title15">Is there a membership fee?</label>
+                            <div class="content">
+                                <p>Yes, there is a small monthly fee for ScriptFlo Accelerator membership. This gives you access to the Marketplace and the ability to view and option never before seen scripts, music or beats.</p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <input type="checkbox" id="title16" />
+                            <label for="title16">How can I be sure I’m seeing market-ready scripts or music?</label>
+                            <div class="content">
+                                <p>We vet every writer and script before accepting their application to the marketplace. Our writers have undergone intensive training, worked with leaders in the industry, and gone through a review process that ensures the
+                                    script you option has a viable place in the market and won't need years of fine-tuning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+      =====================================================
+      End Home Accordion Section 
+      =====================================================
+    -->
+
+    <!-- 
+        =====================================================
+        Start Footer Section 
+        =====================================================
+    -->
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-image"><img src="assets/images/logo2.png" alt=""></div>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-links-content footer-links-content-left">
+                        <div class="footer-title">Links</div>
+                        <div class="footer-link-items">
+                            <a href="marketplace.html" class="link-item">ScriptFlo Market</a>
+                            <a href="wowritersroom.html" class="link-item">ScriptFlo Writers Room</a>
+                            <a href="courses-details.html" class="link-item">ScriptFlo Foundations</a>
+                            <a href="screenwriter.html" class="link-item">Writers</a>
+                            <a href="producer.html" class="link-item">Producer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-content">
+                        <div class="footer-title">Company</div>
+                        <div class="footer-link-items">
+                            <a href="about.html" class="link-item">About page</a>
+                            <a href="careers.html" class="link-item">Careers</a>
+                            <a href="contact.html" class="link-item">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <div class="footer-social-content">
+                        <div class="footer-social-links">
+                            <p class="footer-title">Follow Us</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com"><i class="fa fa-youtube-play"></i></a>
+                            <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                            <a href="https://facebook.com"><i class="fa fa-facebook-official"></i></a>
+                        </div>
+                        <div class="footer-newsletter">
+
+                            <!-- 
+                                =====================================================
+                                SendInBlue Form HTML Code Start
+                                =====================================================
+                            -->
+                            <div class="sib-form" style="text-align: left; padding: 0;">
+                                <div id="sib-form-container" class="sib-form-container">
+                                    <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#ffffff; max-width:450px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                                <path
+                                                    d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription could not
+                                                be saved. Please try again.</span>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#ffffff; border-radius:3px; border-color:#13ce66;max-width:450px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                                <path
+                                                    d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription has been
+                                                successful.</span>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:left;  background-color:transparent; max-width:450px; padding: 0;">
+                                        <form id="sib-form" method="POST" action="https://3b334ad7.sibforms.com/serve/MUIEAHxpkToYvJRtYq6B5GGkbrEOYAWpzzPIv9vL4RrQGeEdRXhmK7yOSQ39tes7kidPre2t_2xkywPczU6yD189Znk2VAxd5C7hfylawfPbOojYaBxEl03hKLvtwUcLoxheOkMX3XcbJLNhrHcw5dkTYArFcdaPQ9RzVoAGGFBUnZUTKpHxs_N_KoYeXM66J0fMfLTklSewMEJB"
+                                            data-type="subscription">
+                                            <div style="padding: 0;">
+                                                <div class="sib-input sib-form-block" style="padding: 0;">
+                                                    <div class="form__entry entry_block">
+                                                        <div class="form__label-row ">
+                                                            <label class="entry__label" style="font-size:16px; text-align:left; font-weight:600; color:#ffffff;" for="EMAIL" data-required="*">
+                                                                Stay tuned for updates
+                                                            </label>
+
+                                                            <div class="entry__field" style="background-color: #4D5B69 !important; border: #4D5B69 !important; max-width: 100%;padding: 3px">
+                                                                <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Type your email" data-required="true" required style="color: #ffffff;" />
+                                                            </div>
+                                                        </div>
+
+                                                        <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; color:#ffffff; border-radius:3px; border-color:#ff4949;">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="sib-form-block" style="text-align: left; padding: 0;">
+                                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:600; color:#FFFFFF; background: #2B79BD; border-radius:3px; border-width:0; padding: 10px 20px;" form="sib-form" type="">
+                                                        <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                                                            viewBox="0 0 512 512">
+                                                            <path
+                                                                d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                        </svg>
+                                                        Subscribe
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="email_address_check" value="" class="input--hidden">
+                                            <input type="hidden" name="locale" value="en">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 
+                                =====================================================
+                                SendInBlue Form HTML Code End
+                                =====================================================
+                            -->
+                            <input type="checkbox" id="accept" name="accept" value="accept" class="accept">
+                            <label for="accept">Accept to receive emails from us.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>
+                    &copy; 2024, ScriptFlo
+                </p>
+                <div class="policy">
+                    <a href="privacy.html" target="_blank"> Privacy Policy</a>
+                    <a href="terms.html" target="_blank">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 
+    =====================================================
+    End Footer Section 
+    =====================================================
+    -->
+
+    <!-- 
+    =====================================================
+    Start Additional Scripts Loaded Last 
+    =====================================================
+    -->
+    <!--Send In Blue-->
+    <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
+    <!--Jquery 3.3.1-->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <!--All JS Assets-->
+    <script src="assets/js/main.js"></script>
+    <!--Slick JS Assets-->
+    <script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+    
+    <!--Temporary JS Code - Remove Once App is Ready -->
+    <script>let woaSignUp = () => {var iframe = document.getElementById('prelaunch').src = src = "https://3b334ad7.sibforms.com/serve/MUIEAI18U4UYzn2x_OfK3yKe4CPETUGts_Ym1fw3vesptGHsUg6LPZ-YIVup6eoSnOEScOGpE1d713kiwtydmmhP2kgyaV-kx-mgMySAtbQTb9jFg1dYQpkOdPJCsbBt5pu3bt4VuGNskYqtJ9LcOz6HDJTXXHhQGS3pQn8b5DgJtk-JoRZ-JWsscHjr4pkb6_Flj7H6XjWxc7lf";}</script>
+
+<script type="text/javascript">
+        $(document).on('ready', function() {
+            $('.one-time').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                arrows: false,
+                slidesToShow: 1,
+                // autoplay: true,
+                // centerMode: true,
+                // variableWidth: true,
+                // autoplaySpeed: 2000,
+            });
+            $('.one-time1').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                arrows: false,
+                slidesToShow: 1,
+                // centerMode: true,
+                // variableWidth: true,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                
+            });
+            $('.one-time2').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                arrows: false,
+                slidesToShow: 1,
+                // centerMode: true,
+                // variableWidth: true,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+            });
+            $('.one-time3').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                arrows: false,
+                slidesToShow: 1,
+                // centerMode: true,
+                // variableWidth: true,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+            });
+        });
+    </script>
+    <script>
+        // Function to show the pop-up
+        function showPopup() {
+            var popup = document.getElementById("popup5");
+            popup.style.display = "block";
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            var popup = document.getElementById("popup5");
+            popup.style.display = "none";
+        }
+
+        document.getElementById("waitlistForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            var form = event.target;
+            var formData = new FormData(form);
+
+        // Show loading message
+            var loadingMessage = document.getElementById("loadingMessage");
+            loadingMessage.classList.add("active");
+
+        // Send form data to Formspree using Fetch API
+        fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+            "Accept": "application/json"
+            }
+        })
+        .then(function(response) {
+            if (response.ok) {
+            alert("Form submitted successfully!");
+            form.reset(); // Clear the form after successful submission
+            } else {
+            alert("Failed to submit form. Please try again later.");
+            }
+        })
+        .catch(function(error) {
+            console.error("Error:", error);
+            alert("Failed to submit form. Please try again later.");
+        })
+        .finally(function() {
+            // Hide loading message
+            loadingMessage.classList.remove("active");
+        });
+        });
+
+        // Function to handle the "Join waitlist" button click
+        document.getElementById("preApp").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        showPopup(); // Show the pop-up
+        });
+    </script>
+    <!-- 
+    =====================================================
+    End Additional Scripts Loaded Last 
+    =====================================================
+    -->
+</body>
+
+</html>
