@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon-new.jpg" />
     <meta name="description" content="Contact Page">
     <title>MarketPlace</title>
 
@@ -53,7 +53,7 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="/">
-                    <img src="assets/images/logo.png" alt="logo">
+                    <img src="assets/images/logos.png" alt="logo">
                 </a>
             </div>
             <div class="nav-btn">
@@ -71,18 +71,19 @@
                                 </a>
                             <div class="dropdown-content">
                                 <a href="marketplace.html">Marketplace</a>
-                                <a href="wowritersroom.html">WO Writers Room</a>
+                                <a href="wowritersroom.html">ScriptFlo Writers Room</a>
                                 <a href="producer.html">Producer</a>
-                                <a href="screenwriter.html">Screenwriter</a>
-                                <a href="courses-details.html">WO Foundations <span></span></a>
+                                <a href="screenwriter.html">Writer</a>
+                                <a href="courses-details.html">ScriptFlo Foundations <span></span></a>
                             </div>
                         </li>
                         <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="https://www.linkedin.com/pulse/10-tips-overcoming-writers-block-strategies-techniques-screenwriters-/?trackingId=WehHPgiXr189xGJt%2BHw5PA%3D%3D">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#" class="btn btn-primary">LOGIN</a></li>
-                        <li><a href="#" style="color: #2697FF;" class="sign-up">SIGN UP</a></li>
+                        <li><a href="#" id="preApp" onClick="woaSignUp()" class="btn btn-primary">Join waitlist</a></li>
+                        <!-- <li><a href="#" class="btn btn-primary">LOGIN</a></li>
+                        <li><a href="#" style="color: #2697FF;" class="sign-up">SIGN UP</a></li> -->
                     </ul>
                 </div>
                 <div class="menu-bg" id="menu-bg"></div>
@@ -96,6 +97,23 @@
             <iframe id="prelaunch" width="540" height="100%" frameborder="0" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
         </div>
     </div>
+</div>
+<div id="popup5" class="popup5">
+    <span class="close-icon" onclick="closePopup()">X</></span>
+    <form id="waitlistForm" action="https://formspree.io/f/xpzvbdzp" method="POST">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" placeholder="Joe"><br>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" placeholder="Doe"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="djmakeup@gmail.com"><br><br>
+        <label for="type">Type:</label><br>
+        <input type="text" id="role" name="role" placeholder="Scriptwriter/Producer/Beats maker"><br><br>
+        <button type="submit">Submit</button>
+        <div id="loadingMessage" class="loading">Submitting...</div>
+    </form>
+</div>
+</div>
 
     <!--Pre Launch Send In Blue Form End-->
     <!--==========Menu Bar Section End==========-->
@@ -123,9 +141,9 @@
     -->
         <div class="woa-marketplace-hero">
             <div class="hero-content">
-                <h1 class="hero-title">Where Great Scripts Are Listed and Produced</h1>
-                <p class="hero-desc">Designed for screenwriters looking to get their best work in front of world-class producers, and producers searching for ready-to-produce scripts.</p>
-                <a href="https://app.woaccelerator.com/login" id="preApp" onClick="woaSignUp()" class="hero-link">Try marketplace</a>
+                <h1 class="hero-title">Where Great Scripts, Music and Beats Are Listed and Produced</h1>
+                <p class="hero-desc">Designed for screenwriters, songwriters and beat makers looking to get their best work in front of world-class producers, and producers searching for ready-to-produce works.</p>
+                <a href="#" id="preApp" onClick="woaSignUp()" class="hero-link">Try marketplace</a>
             </div>
         </div>
 
@@ -149,7 +167,7 @@
                             <div class="guest-info-box">
                                 <img src="assets/images/ScreenWriter-icon.png" alt="ScreenWriter">
                                 <div class="guest-info">
-                                    <h3 class="guest-title">ScreenWriter</h3>
+                                    <h3 class="guest-title">Writer</h3>
                                     <p class="guest-desc">Learn, Write, Sell</p>
                                 </div>
                             </div>
@@ -183,9 +201,9 @@
                 <div class="sw-itroduction">
                     <div class="sw-cb">
                         <div class="sw-data">
-                            <h4 class="sw-preheading">Screenwriter?</h4>
+                            <h4 class="sw-preheading">Writer? Beats makers?</h4>
                             <h2 class="sw-heading">Let producers come to <span>you</span></h2>
-                            <p class="sw-desc">Increase the chances of your script being sold by joining our marketplace. We accept applications from talented, diverse writers from all over the world.</p>
+                            <p class="sw-desc">Increase the chances of your script, song or beats being sold by joining our marketplace. We accept applications from talented, diverse writers from all over the world.</p>
                         </div>
                         <div class="sw-img">
                             <img src="assets/images/screenwriters-main.png">
@@ -197,7 +215,7 @@
                     <div class="sw-hw-cb">
                         <div class="hw-header">
                             <h2 class="hw-heading">See how it works</h2>
-                            <p class="hw-desc">For screenwriters looking to put their best work right in front of producers from around the world.</p>
+                            <p class="hw-desc">For writers looking to put their best work right in front of producers from around the world.</p>
                         </div>
                         <!-- working methods -->
                         <div class="wm-box-container desktop-section">
@@ -206,7 +224,7 @@
                             <div class="wm-box Mydivadd">
                                 <img src="assets/images/upload-icon.png" class="wm-box-icon">
                                 <h3 class="wm-box-title">Upload</h3>
-                                <p class="wm-box-desc">Upload your best script and fill in the needed information.</p>
+                                <p class="wm-box-desc">Upload your best script or music and fill in the needed information.</p>
                             </div>
                             <!-- 2nd -->
                             <div class="wm-box">
@@ -218,7 +236,7 @@
                             <div class="wm-box">
                                 <img src="assets/images/publish-icon.png" class="wm-box-icon">
                                 <h3 class="wm-box-title">Publish</h3>
-                                <p class="wm-box-desc">If your script passes, make payment and publish it to the marketplace.
+                                <p class="wm-box-desc">If your script or music passes, publish it to the marketplace.
                                 </p>
                                 <a href="pricing.html" class="wm-box-link">See pricing</a>
                             </div>
@@ -267,7 +285,7 @@
                     <div class="hg-cb">
                         <div class="hg-header">
                             <h2 class="hg-heading"><span>How</span> to get in</h2>
-                            <p class="hg-desc">To get into the marketplace and start uploading your scripts, you have to choose one of the following routes.</p>
+                            <p class="hg-desc">To get into the marketplace and start uploading your scripts/songs/beats, you have to choose one of the following routes.</p>
                         </div>
                         <!-- steps to get in -->
                         <div class="hg-box-container">
@@ -275,15 +293,15 @@
                             <div class="hg-box">
                                 <img src="assets/images/sw-getin1.png">
                                 <div class="hg-header-box">
-                                    <h3 class="hg-title">WO Foundations</h3>
+                                    <h3 class="hg-title">ScriptFlo Foundations</h3>
                                     <a href="#" class="course-link">See Courses</a>
                                 </div>
                                 <p class="hg-sub-heading">Should have:</p>
                                 <ul>
-                                    <li>Taken any of our screenwriting courses.</li>
+                                    <li>Taken any of our writing courses.</li>
                                     <li>Successfully completed at least one course.</li>
-                                    <li>Invited to submit your best scripts.</li>
-                                    <li>Got your script reviewed and accepted.</li>
+                                    <li>Invited to submit your best writing.</li>
+                                    <li>Get your script/song/beats reviewed and accepted.</li>
                                 </ul>
                             </div>
                             <!-- 2nd -->
@@ -294,9 +312,9 @@
                                 </div>
                                 <p class="hg-sub-heading">Requirements:</p>
                                 <ul>
-                                    <li>Should be a professional screenwriter.</li>
-                                    <li>Written an original script with a unique story.</li>
-                                    <li>Got your script reviewed and accepted.</li>
+                                    <li>Should be a professional writer.</li>
+                                    <li>Written an original script or song with a unique story.</li>
+                                    <li>Got your script or song reviewed and accepted.</li>
                                     <li>Have to hit a 30 out of 36 score to gain access.</li>
                                 </ul>
                             </div>
@@ -304,7 +322,7 @@
                             <div class="hg-box hg-box-3">
                                 <img src="assets/images/sw-getin3.png">
                                 <div class="hg-header-box">
-                                    <h3 class="hg-title">WO Writers Room</h3>
+                                    <h3 class="hg-title">ScriptFlo Writers Room</h3>
                                 </div>
                                 <p class="hg-sub-heading">You’ll get:</p>
                                 <ul>
@@ -321,7 +339,7 @@
 
                             </div>
                             <div class="">
-                                <h3 class="hg-title">WO Writers Room</h3>
+                                <h3 class="hg-title">ScriptFlo Writers Room</h3>
                                 <p class="hg-sub-heading">You’ll get:</p>
                             
                             <ul>
@@ -359,8 +377,8 @@
                         </div>
                         <div class="pro-data">
                             <h4 class="pro-preheading">Are you a producer?</h4>
-                            <h2 class="pro-heading">Browse a rich catalog of scripts</h2>
-                            <p class="pro-desc">Have access to great scripts with engaging concepts, characters, stories, and plot. Whatever script genre you need, you will find a pipeline of high-quality projects with which to work.</p>
+                            <h2 class="pro-heading">Browse a rich catalog of scripts and songs</h2>
+                            <p class="pro-desc">Have access to great scripts, songs and beats with engaging concepts, characters, lyrics, stories, and plot. Whatever script or song genre you need, you will find a pipeline of high-quality projects with which to work.</p>
                         </div>
                     </div>
                 </div>
@@ -369,7 +387,7 @@
                     <div class="pro-hw-cb">
                         <div class="pro-hw-header">
                             <h2 class="pro-hw-heading">See how it works</h2>
-                            <p class="pro-hw-desc">For producers looking for screenplays with a high concept story and a clear market.</p>
+                            <p class="pro-hw-desc">For producers looking for screenplays or lyrics with a high concept and a clear market.</p>
                         </div>
                         <!-- working methods desktop-section-->
                         <div class="pro-box-container desktop-section">
@@ -390,7 +408,7 @@
                             <div class="pro-box">
                                 <img src="assets/images/producer-work3.png" class="pro-box-icon">
                                 <h3 class="pro-box-title">Browse marketplace</h3>
-                                <p class="pro-box-desc">Browse through our rich catalog of scripts from different genres.
+                                <p class="pro-box-desc">Browse through our rich catalog of scripts, music and beats from different genres.
                                 </p>
                             </div>
                             <!-- 4th -->
@@ -421,7 +439,7 @@
                             <div class="pro-box">
                                 <img src="assets/images/producer-work3.png" class="pro-box-icon">
                                 <h3 class="pro-box-title">Browse marketplace</h3>
-                                <p class="pro-box-desc">Browse through our rich catalog of scripts from different genres.
+                                <p class="pro-box-desc">Browse through our rich catalog of scripts, music and beats from different genres.
                                 </p>
                             </div>
                             <!-- 4th -->
@@ -450,23 +468,23 @@
                             <div class="pro-hg-box pro-basic">
                                 <div class="pro-hg-header-box">
                                     <div class="pro-hg-plan-price">
-                                        <h1>$0</h1>
-                                        <del>$300</del>
+                                        <h1>₦0</h1>
+                                        <del>₦60,000</del>
                                         <span>/month</span>
                                     </div>
                                     <h3 class="pro-hg-title">Basic</h3>
                                     <p class="pro-hg-sunheading">Credit card not required</p>
-                                    <p class="link-text">For independent producers and Individuals.<br/>Available to Union and Non-Union Members</p>
+                                    <p class="link-text">For independent producers and Individuals.</p>
                                 </div>
                                 <div class="pro-hg-body">
                                     <p class="pro-wg">What you’ll get</p>
                                     <ul>
                                         <li class="pro-hg-bg"><img src="assets/images/tik-list.png">FREE Access to 4-6 Months Beta Testing.</li>
                                         <li class="pro-hg-b"><img src="assets/images/blue-tik.svg">Access to scripts with general availability.</li>
-                                        <li class="pro-hg-b"><img src="assets/images/blue-tik.svg">Access to Purchase Script Treatment</li>
+                                        <li class="pro-hg-b"><img src="assets/images/blue-tik.svg">Access to Purchase Script and music Treatment</li>
                                         <li class="pro-hg-b"><img src="assets/images/blue-tik.svg">6 or 12 months option terms available
                                         </li>
-                                        <li class="pro-hg-b"><img src="assets/images/blue-tik.svg">Access to purchase full script</li>
+                                        <li class="pro-hg-b"><img src="assets/images/blue-tik.svg">Access to purchase full script and music</li>
                                         <li class="pro-hg-b"><img src="assets/images/blue-tik.svg">One-time 6 months term extension or end.</li>
                                     
                                     </ul>
@@ -476,14 +494,13 @@
                             <div class="pro-hg-box pro-premium">
                                 <div class="pro-hg-header-box">
                                     <div class="pro-hg-pre-plan">
-                                        <h1>$0</h1>
-                                        <del>$600</del>
+                                        <h1>₦0</h1>
+                                        <del>₦150,000</del>
                                         <span>/month</span>
                                     </div>
                                     <h3 class="pro-hg-title">Premium</h3>
                                     <p class="pro-hg-sunheading">Credit card not required</p>
                                     <p class="link-text">For studios, production houses, network TV film executives, and streaming services.</p>
-                                    <a href="#" class="pro-guild_members"> Available to Guild Members Only</a>
                                 </div>
                                 <div class="pro-hg-body">
                                     <p class="pro-wg">What you’ll get</p>
@@ -496,16 +513,16 @@
                                                 <img src="assets/images/popup-cross-icon.png" class="cross-icon">
                                                 <div class="comWork-box">
                                                     <h3 class="popup_title">First Look</h3>
-                                                    <p class="popup_desc">Have 72 hour access before scripts get listed on the general platform. Producers on our marketplace platform on the Premium subscription can submit their option bid (at or above the minimum) within the
+                                                    <p class="popup_desc">Have 72 hour access before scripts or music get listed on the general platform. Producers on our marketplace platform on the Premium subscription can submit their option bid (at or above the minimum) within the
                                                         initial window.
                                                     </p>
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="pro-hg-p"><img src="assets/images/orange-tik.svg">Access to Purchase Script Treatment</li>
+                                        <li class="pro-hg-p"><img src="assets/images/orange-tik.svg">Access to Purchase Script and music Treatment</li>
                                         <li class="pro-hg-p"><img src="assets/images/orange-tik.svg">6 or 12 months option terms available</li>
                                         <li class="pro-hg-p"><img src="assets/images/orange-tik.svg">One-time 6 months term extension or end.</li>
-                                        <li class="pro-hg-pg"><img src="assets/images/check.svg">
+                                        <!-- <li class="pro-hg-pg"><img src="assets/images/check.svg">
                                             <p>Ability to create commissioned work. <img class="commission_popup_link info-icon" src="assets/images/info-icon.png"></p>
                                             <div class="commissioned_work">
                                                 <img src="assets/images/popup-cross-icon.png" class="cross-icon">
@@ -514,10 +531,10 @@
                                                     <p class="popup_desc">Ability to create commissioned work. Analyze the screenplay and work closely with the writer</p>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
-                                <div class="pro-footer">
+                                <!-- <div class="pro-footer">
                                     <p class="pro-last-link">See Accepted Unions</p>
                                     <div class="a_guilds">
                                         <img src="assets/images/popup-cross-icon.png" class="cross-icon">
@@ -532,7 +549,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <a href="pricing.html" class="pro-pricing-list">See pricing</a>
@@ -557,11 +574,11 @@
     -->
         <div class="sell_buy">
             <div class="s_b_box">
-                <h2 class="s_b_title">Start Selling and Buying Scripts Today</h2>
-                <p class="s_b_desc">Publish your script, find the perfect material, finalize the deal.</p>
+                <h2 class="s_b_title">Start Selling and Buying Scripts and music Today</h2>
+                <p class="s_b_desc">Publish your script and music, find the perfect material, finalize the deal.</p>
                 <div class="s_b_btn-group">
-                    <a href="https://app.woaccelerator.com/login" id="preApp" onClick="woaSignUp()" class="s_b_login">Login</a>
-                    <a href="https://app.woaccelerator.com/login" id="preApp" onClick="woaSignUp()" class="s_b_signup">create account</a>
+                    <a href="#" id="preApp" onClick="woaSignUp()" class="s_b_login">Login</a>
+                    <a href="#" id="preApp" onClick="woaSignUp()" class="s_b_signup">create account</a>
                 </div>
             </div>
         </div>
@@ -587,19 +604,19 @@
                     <!-- 1st -->
                     <div class="woa-marketplace-ac-item">
                         <h3 class="woa-marketplace-ac-title">How does the marketplace work for producers?</h3>
-                        <div class="woa-marketplace-ac-body">Using our highly customizable search engine, you can search for the script genre you want. You'll see the available scripts during your search and can access them based on your subscription package. It's fast, easy, and efficient.
+                        <div class="woa-marketplace-ac-body">Using our highly customizable search engine, you can search for the script or music genre you want. You'll see the available scripts during your search and can access them based on your subscription package. It's fast, easy, and efficient.
                         </div>
                     </div>
                     <!-- 2nd -->
                     <div class="woa-marketplace-ac-item">
-                        <h3 class="woa-marketplace-ac-title">I just finished writing a screenplay. Will you help me sell it?
+                        <h3 class="woa-marketplace-ac-title">I just finished writing a screenplay or song. Will you help me sell it?
                         </h3>
-                        <div class="woa-marketplace-ac-body">Yes. We will review your screenplay to ensure that it is marketplace-worthy, and then you can publish it to the marketplace once it's passed our standards. To do this, you have to subscribe to our Direct Path package. </div>
+                        <div class="woa-marketplace-ac-body">Yes. We will review your screenplay or song to ensure that it is marketplace-worthy, and then you can publish it to the marketplace once it's passed our standards. To do this, you have to subscribe to our Direct Path package. </div>
                     </div>
                     <!-- 3rd -->
                     <div class="woa-marketplace-ac-item">
                         <h3 class="woa-marketplace-ac-title">How do I contact writers?</h3>
-                        <div class="woa-marketplace-ac-body">Access to the writers in our WO Writers Room is exclusively invite-only.
+                        <div class="woa-marketplace-ac-body">Access to the writers in our ScriptFlo Writers Room is exclusively invite-only.
                         </div>
                     </div>
                     <!-- 4th -->
@@ -625,16 +642,16 @@
 
     <footer class="footer">
         <div class="footer-container container">
-            <div class="footer-image"><img src="assets/images/logo2.png" alt=""></div>
+            <div class="footer-image"><img src="assets/images/logos-white.png" alt=""></div>
             <div class="footer-content">
                 <div class="footer-links">
                     <div class="footer-links-content footer-links-content-left">
                         <div class="footer-title">Links</div>
                         <div class="footer-link-items">
-                            <a href="marketplace.html" class="link-item">WO Market</a>
-                            <a href="wowritersroom.html" class="link-item">WO Writers Room</a>
-                            <a href="courses-details.html" class="link-item">WO Foundations</a>
-                            <a href="screenwriter.html" class="link-item">Screenwriter</a>
+                            <a href="marketplace.html" class="link-item">ScriptFlo Market</a>
+                            <a href="wowritersroom.html" class="link-item">ScriptFlo Writers Room</a>
+                            <a href="courses-details.html" class="link-item">ScriptFlo Foundations</a>
+                            <a href="screenwriter.html" class="link-item">Writers</a>
                             <a href="producer.html" class="link-item">Producer</a>
                         </div>
                     </div>
@@ -646,7 +663,6 @@
                             <a href="about.html" class="link-item">About page</a>
                             <a href="careers.html" class="link-item">Careers</a>
                             <a href="contact.html" class="link-item">Contact</a>
-                            <a href="https://www.linkedin.com/pulse/10-tips-overcoming-writers-block-strategies-techniques-screenwriters-/?trackingId=WehHPgiXr189xGJt%2BHw5PA%3D%3D" class="link-item">Blog</a>
                         </div>
                     </div>
                 </div>
@@ -656,10 +672,10 @@
                             <p class="footer-title">Follow Us</p>
                         </div>
                         <div class="social-links">
-                            <a href="https://www.youtube.com/@woaccelerator"><i class="fa fa-youtube-play"></i></a>
-                            <a href="https://www.linkedin.com/company/woaccelerator/"><i class="fa fa-linkedin-square"></i></a>
-                            <a href="https://www.instagram.com/_woaccelerator_/"><i class="fa fa-instagram"></i></a>
-                            <a href="https://facebook.com/woaccelerator"><i class="fa fa-facebook-official"></i></a>
+                            <a href="https://www.youtube.com"><i class="fa fa-youtube-play"></i></a>
+                            <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                            <a href="https://facebook.com"><i class="fa fa-facebook-official"></i></a>
                         </div>
                         <div class="footer-newsletter">
 
@@ -667,28 +683,28 @@
                                 =====================================================
                                 SendInBlue Form HTML Code Start
                                 =====================================================
-                                -->
+                            -->
                             <div class="sib-form" style="text-align: left; padding: 0;">
                                 <div id="sib-form-container" class="sib-form-container">
                                     <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#ffffff; max-width:450px;">
                                         <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
                                             <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                                    <path
-                                                        d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-                                                </svg>
-                                            <span class="sib-form-message-panel__inner-text">Your subscription could
-                                                    not be saved. Please try again.</span>
+                                                <path
+                                                    d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription could not
+                                                be saved. Please try again.</span>
                                         </div>
                                     </div>
                                     <div></div>
                                     <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#ffffff; border-radius:3px; border-color:#13ce66;max-width:450px;">
                                         <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
                                             <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                                    <path
-                                                        d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-                                                </svg>
-                                            <span class="sib-form-message-panel__inner-text">Your subscription has
-                                                    been successful.</span>
+                                                <path
+                                                    d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription has been
+                                                successful.</span>
                                         </div>
                                     </div>
                                     <div></div>
@@ -700,8 +716,8 @@
                                                     <div class="form__entry entry_block">
                                                         <div class="form__label-row ">
                                                             <label class="entry__label" style="font-size:16px; text-align:left; font-weight:600; color:#ffffff;" for="EMAIL" data-required="*">
-                                                                    Stay tuned for updates
-                                                                </label>
+                                                                Stay tuned for updates
+                                                            </label>
 
                                                             <div class="entry__field" style="background-color: #4D5B69 !important; border: #4D5B69 !important; max-width: 100%;padding: 3px">
                                                                 <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Type your email" data-required="true" required style="color: #ffffff;" />
@@ -709,20 +725,20 @@
                                                         </div>
 
                                                         <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; color:#ffffff; border-radius:3px; border-color:#ff4949;">
-                                                            </label>
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="sib-form-block" style="text-align: left; padding: 0;">
-                                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:600; color:#FFFFFF; background: #2B79BD; border-radius:3px; border-width:0; padding: 10px 20px;" form="sib-form" type="submit">
-                                                            <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
-                                                                viewBox="0 0 512 512">
-                                                                <path
-                                                                    d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                                                            </svg>
-                                                            Subscribe
-                                                        </button>
+                                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:600; color:#FFFFFF; background: #2B79BD; border-radius:3px; border-width:0; padding: 10px 20px;" form="sib-form" type="">
+                                                        <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                                                            viewBox="0 0 512 512">
+                                                            <path
+                                                                d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                        </svg>
+                                                        Subscribe
+                                                    </button>
                                                 </div>
                                             </div>
                                             <input type="text" name="email_address_check" value="" class="input--hidden">
@@ -735,8 +751,7 @@
                                 =====================================================
                                 SendInBlue Form HTML Code End
                                 =====================================================
-                                -->
-
+                            -->
                             <input type="checkbox" id="accept" name="accept" value="accept" class="accept">
                             <label for="accept">Accept to receive emails from us.</label>
                         </div>
@@ -745,7 +760,7 @@
             </div>
             <div class="footer-copyright">
                 <p>
-                    &copy; 2022, WO Accelerator
+                    &copy; 2024, ScriptFlo
                 </p>
                 <div class="policy">
                     <a href="privacy.html" target="_blank"> Privacy Policy</a>
@@ -827,6 +842,60 @@
                 // autoplay: true,
                 // autoplaySpeed: 2000,
             });
+        });
+    </script>
+    <script>
+        // Function to show the pop-up
+        function showPopup() {
+            var popup = document.getElementById("popup5");
+            popup.style.display = "block";
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            var popup = document.getElementById("popup5");
+            popup.style.display = "none";
+        }
+
+        document.getElementById("waitlistForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            var form = event.target;
+            var formData = new FormData(form);
+
+        // Show loading message
+            var loadingMessage = document.getElementById("loadingMessage");
+            loadingMessage.classList.add("active");
+
+        // Send form data to Formspree using Fetch API
+        fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+            "Accept": "application/json"
+            }
+        })
+        .then(function(response) {
+            if (response.ok) {
+            alert("Form submitted successfully!");
+            form.reset(); // Clear the form after successful submission
+            } else {
+            alert("Failed to submit form. Please try again later.");
+            }
+        })
+        .catch(function(error) {
+            console.error("Error:", error);
+            alert("Failed to submit form. Please try again later.");
+        })
+        .finally(function() {
+            // Hide loading message
+            loadingMessage.classList.remove("active");
+        });
+        });
+
+        // Function to handle the "Join waitlist" button click
+        document.getElementById("preApp").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        showPopup(); // Show the pop-up
         });
     </script>
 
