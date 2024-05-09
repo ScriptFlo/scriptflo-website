@@ -7757,3 +7757,42 @@ producer page responsive tablet code ends
       width: 273px !important;
     }
 }
+
+@media (min-width: 430px) and (max-width: 768px) {
+  .navbar .nav-container .nav-btn .menu a {
+    width: 260px;
+    height: 100px;
+    padding-right: 10px;
+    margin-right: 0px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 390px) {
+  .navbar .nav-container .nav-btn .menu a {
+    width: 260px;
+    height: 100px;
+    padding-right: 10px;
+    margin-right: 0px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 390px) {
+  .anchor {
+    height: 50px !important;
+    width: 180px !important;
+    font-size: 13px !important;
+    line-height: 0 !important;
+  }
+}
+
+/* style="
+    width: 260px;
+    height: 100px;
+    padding-right: 10px;
+    margin-right: 0px;
+    padding-left: 10px;
+" */
+
+/* style="width: 230px;" */
